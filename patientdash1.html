@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+           .first{
+            padding: 10px;
+            margin: 10px;
+            margin-top: 50px;
+        }
+        .tr{
+            width: 100%;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark ">
+       
+        <a href="#" class="navbar-brand">
+            <img src="img/hospitallogo.png" alt="">&nbsp;&nbsp;YASHODA HOSPITAL
+        </a>
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#new">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+       
+        <div class="collapse navbar-collapse" id="new">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item"><a href="index.html" class="nav-link">HOME</a></li>
+            <li class="nav-item"><a href="gallary.html" class="nav-link">GALLARY</a></li>
+            <li class="nav-item"><a href="about.html" class="nav-link">ABOUT US</a></li>
+            <li class="nav-item"><a href="contact.html" class="nav-link">CONTACT US</a></li>
+            <li class="nav-item"><a href="patient.html" class="nav-link">PAITENT LOGIN</a></li>
+            <li class="nav-item"><a href="docter.html" class="nav-link">DOCTER LOGIN</a></li>
+            <li class="nav-item"><a href="Admin.html" class="nav-link">ADMIN LOGIN</a></li>
+        </ul>
+    </div>
+    </nav>
+   
+    <div class="container-fluid">
+        <div class="row">
+          <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
+            <div class="position-sticky pt-3">
+              <ul class="nav flex-column">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="patientdash1.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-home" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+                   Book New Appointment
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="patientdash2.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file" aria-hidden="true"><path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path><polyline points="13 2 13 9 20 9"></polyline></svg>
+                    Old Appointment
+                  </a>
+                </li>
+                          
+              </ul>
+            </div>
+          </nav>
+      
+          <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+           
+            <div class="container  second">
+                <h1><center>Book New APPOINTMENT</center></h1>
+                <form action="">
+                <div class="row">
+                   
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="name">FIRST NAME</label>
+                            <input type="text" name="name" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">LAST NAME</label>
+                            <input type="text" name="email" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">PHONE NO</label>
+                            <input type="text" name="phone" class="form-control">
+                        </div>
+                    
+                    <div class="form-group">
+                        <label for="city">CHOSE DOCTER</label>
+                        <select name="city" id="city" class="form-control">
+                            <option value="sang">Docter</option>
+                            <option value="kol">DR.Patil</option>
+                            <option value="satara">DR,Salunkhe</option>
+                            <option value="sang">Dr.Dhame</option>
+                        </select>
+                    </div>
+                
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="name">APPOINTMENT DATE</label>
+                    <input type="text" name="name" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="city">CHOOSE APPOINTMENT TIME</label>
+                    <select name="city" id="city" class="form-control">
+                        <option value="sang">Time</option>
+                        <option value="kol">8.00am To 11.00am</option>
+                        <option value="satara">4.00pm To 8.00pm</option>
+                        
+                    </select>
+                </div>  
+             
+            </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <input type="submit" value="submit" class="btn btn-dark tr">
+                       
+                    </div>
+                    <div class="col-md-6">
+                        <input type="reset" value="reset"  class="btn btn-success tr" class="btn-block">
+                       
+                    </div>
+                    
+                </div>
+            </form>
+            </div>
+           
+            
+          </main>
+        </div>
+      </div>
+    <script src="js/jquery-3.6.0.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

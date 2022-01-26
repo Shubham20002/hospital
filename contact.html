@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        .first{
+            padding: 10px;
+            margin: 10px;
+            margin-top: 50px;
+        }
+        .tr{
+            width: 100%;
+            margin-top: 10px;
+        }
+        .second{
+            padding: 10px;
+            margin-top: 20px;
+           /* background-color:  rgb(247, 175, 119); */
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark ">
+       
+        <a href="#" class="navbar-brand">
+            <img src="img/hospitallogo.png" alt="">&nbsp;&nbsp;YASHODA HOSPITAL
+        </a>
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#new">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+       
+        <div class="collapse navbar-collapse" id="new">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item"><a href="index.html" class="nav-link">HOME</a></li>
+            <li class="nav-item"><a href="gallary.html" class="nav-link">GALLARY</a></li>
+            <li class="nav-item"><a href="about.html" class="nav-link">ABOUT US</a></li>
+            <li class="nav-item"><a href="contact.html" class="nav-link">CONTACT US</a></li>
+            <li class="nav-item"><a href="patient.html" class="nav-link">PAITENT LOGIN</a></li>
+            <li class="nav-item"><a href="docter.html" class="nav-link">DOCTOR LOGIN</a></li>
+            <li class="nav-item"><a href="Admin.html" class="nav-link">ADMIN LOGIN</a></li>
+        </ul>
+    </div>
+    </nav>
+
+    <!-- main -->
+
+    <div class="container  second">
+        <h1><center>Contact Form</center></h1>
+        <form action="">
+        <div class="row">
+           
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="name">NAME</label>
+                    <input type="text" name="name" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="email">EMAIL</label>
+                    <input type="text" name="email" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="phone">PHONE NO</label>
+                    <input type="text" name="phone" class="form-control">
+                </div>
+            
+            <div class="form-group">
+                <label for="city">CHOSE DOCTER</label>
+                <select name="city" id="city" class="form-control">
+                    <option value="sang">Docter</option>
+                    <option value="kol">DR.Patil</option>
+                    <option value="satara">DR,Salunkhe</option>
+                    <option value="sang">Dr.Dhame</option>
+                </select>
+            </div>
+        
+    </div>
+    <div class="col-md-6">
+        <div class="form-group">
+            <label for="name">ADDRESS</label>
+            <input type="text" name="name" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="city">CHOOSE APPOINTMENT TIME</label>
+            <select name="city" id="city" class="form-control">
+                <option value="sang">Time</option>
+                <option value="kol">8.00am To 11.00am</option>
+                <option value="satara">4.00pm To 8.00pm</option>
+                
+            </select>
+        </div>  
+     
+    </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <input type="submit" value="submit" class="btn btn-dark tr">
+               
+            </div>
+            <div class="col-md-6">
+                <input type="reset" value="reset"  class="btn btn-success tr" class="btn-block">
+               
+            </div>
+            
+        </div>
+    </form>
+    </div>
+    <script src="js/jquery-3.6.0.js"></script>
+     <script src="js/bootstrap.min.js"></script>
+    
+
+</body>
+</html>
